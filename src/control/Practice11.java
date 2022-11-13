@@ -10,15 +10,15 @@ public class Practice11 {
         String input = sc.nextLine();
 
         int maximum = 4; //최대 4자리
-        int num1 = input.charAt(0);
-        int num2 = input.charAt(1);
-        int num3 = input.charAt(2);
-        int num4 = input.charAt(3);
-
-        if ( input.length() > maximum ){ //4자리 초과
+        if ( input.length() != maximum ){
             System.out.println("자리수 안맞음");
         }
         else{
+            int num1 = input.charAt(0);
+            int num2 = input.charAt(1);
+            int num3 = input.charAt(2);
+            int num4 = input.charAt(3);
+
             if( num1 < 49 || num1 > 57) { //0의 아스키코드 == 48
                 System.out.println("제일 앞자리는 1~9사이의 수를 입력하세요.");
             } else if (num1 == num2){
@@ -33,11 +33,9 @@ public class Practice11 {
                 System.out.println("중복값 있음");
             } else if (num3 == num4) {
                 System.out.println("중복값 있음");
-            }
-            else {
+            } else {
                 System.out.println("성공");
             }
-
         }
     }
 }

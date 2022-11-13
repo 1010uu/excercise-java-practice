@@ -1,10 +1,11 @@
 import control.Practice11;
+import loop.Practice01;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Practice11 execute = new Practice11();
-        execute.practice11();
+        Practice01 execute = new Practice01();
+        execute.practice01();
     }
 }

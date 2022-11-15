@@ -1,10 +1,10 @@
-import loop.Practice15;
+import array.Practice09;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Practice15 execute = new Practice15();
-        execute.practice15();
+        Practice09 execute = new Practice09();
+        execute.practice09();
     }
 }
